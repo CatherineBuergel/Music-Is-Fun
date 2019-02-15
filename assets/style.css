@@ -1,0 +1,15 @@
+.background {
+  background-image: url(background.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(130%);
+  filter: contrast(2.3);
+}
+
+.search-form{
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
