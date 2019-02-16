@@ -17,13 +17,14 @@
             <form class="form-inline stuff" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                 <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                 <div class="form-group">
-                    <input type="text" class="form-control mr-2" name="artist" placeholder="Artist Name" />
+                    <input type="text" onkeyup="this.value = this.value.toUpperCase();" class="form-control mr-2" name="artist"
+                        placeholder="Artist Name" />
                     <button type="submit" class="btn btn-info" id="get-music-button">Get Music</button>
                 </div>
             </form>
             <div class="row mt-3">
-                <div class="col">
-                    <audio controls src="" id="audio" autoplay> </audio>
+                <div class="col" id="audioHere">
+
                 </div>
             </div>
         </div>

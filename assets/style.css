@@ -12,11 +12,15 @@
   margin-top: 300px;
 }
 
-.form-control{
+.form-control, .form-control:focus, .form-control:active{
   background-color: transparent;
   box-shadow: none;
   border: none;
+  font-size: 2em;
   color: white;
 
 }
 
+input::placeholder{
+  color: white;
+}

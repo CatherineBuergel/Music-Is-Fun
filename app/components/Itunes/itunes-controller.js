@@ -15,6 +15,11 @@ function drawSongs() {
 
 }
 
+function drawAudio() {
+  let template = `<audio controls src="" id="audio" autoplay></audio>`
+  document.getElementById('audioHere').innerHTML = template;
+}
+
 
 //PUBLIC
 class ItunesController {
@@ -37,7 +42,9 @@ class ItunesController {
   }
 
   playSong(url) {
+    drawAudio()
     document.getElementById('audio').setAttribute('src', url);
+
   }
 }
 
