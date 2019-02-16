@@ -9,7 +9,7 @@ export default class Song {
         this.preview = song.previewUrl
     }
     getTemplate() {
-        return ` <div class="col-12 col-md-6 my-3">
+        return ` <div class="col-12 col-md-3 my-3">
                     <div class="card text-center">
                         <img src="${this.albumArt}" class="card-img-top" alt="...">
                         <div class="card-body">
